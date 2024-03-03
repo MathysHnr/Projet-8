@@ -1,0 +1,36 @@
+nav {
+  margin: 2% 0;
+  @media screen and (max-width: 768px) {
+    text-transform: uppercase;
+  }
+  .header {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    img {
+      @media screen and (max-width: 768px) {
+        width: 145px;
+      }
+    }
+    .header_nav {
+      display: flex;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $color-tert;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      text-decoration: underline;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: $size-nav-mobile;
+      text-align: center;
+    }
+  }
+}

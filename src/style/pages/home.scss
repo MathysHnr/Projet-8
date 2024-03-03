@@ -1,0 +1,111 @@
+.img_banner_home {
+  margin: auto;
+  max-width: 1440px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 150px;
+    justify-content: left;
+  }
+}
+
+.img_paysage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(75%);
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+.txt_paysage {
+  width: auto;
+  position: absolute;
+  z-index: 100;
+  color: white;
+  font-size: $size-title;
+  @media screen and (max-width: 768px) {
+    padding-left: 10px;
+    font-size: $size-desc;
+  }
+}
+
+.box_fiches {
+  max-width: 1440px;
+  box-sizing: border-box;
+  background-color: $color-sec;
+  margin: 50px auto;
+  padding: 50px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 5px 5px;
+    gap: 30px;
+    background-color: transparent;
+    margin: 30px auto;
+  }
+}
+
+.card {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+  @media screen and (max-width: 768px) {
+    height: 250px;
+  }
+  p {
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    @media screen and (max-width: 768px) {
+      height: 250px;
+    }
+  }
+}
+
+.gradient {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0),
+    rgba(0, 0, 0, 0.6)
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  &:hover {
+    cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    height: 250px;
+  }
+}

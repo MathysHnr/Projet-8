@@ -1,0 +1,61 @@
+.logement_banner {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @media screen and (max-width: 768px) {
+    min-height: 255px;
+  }
+  .arrow_left {
+    position: absolute;
+    left: 20px;
+    @media screen and (max-width: 768px) {
+      height: 50px;
+      left: 5px;
+    }
+  }
+  .arrow_right {
+    position: absolute;
+    right: 20px;
+    @media screen and (max-width: 768px) {
+      height: 50px;
+      right: 5px;
+    }
+  }
+  .arrow_hidden {
+    display: none;
+  }
+  .logement_picture {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 60% 60%;
+    position: absolute;
+    transition: all 1.5s ease-in-out;
+    @media screen and (max-width: 768px) {
+      max-height: 255px;
+    }
+  }
+  .hidden {
+    width: 0;
+  }
+  .slide-number {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
+    .inactif {
+      background-color: $color-sec;
+    }
+  }
+  .point_hidden {
+    display: none;
+  }
+}

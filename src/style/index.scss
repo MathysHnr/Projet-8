@@ -1,0 +1,67 @@
+@import "./utils/variables.scss";
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/collapsible.scss";
+@import "./components/carousel.scss";
+@import "./pages/home.scss";
+@import "./pages/a-propos.scss";
+@import "./pages/fiche-logement.scss";
+
+* {
+  font: {
+    family: "Montserrat", sans-serif;
+    weight: 500;
+    size: $size-p;
+  }
+}
+
+body {
+  margin: auto;
+}
+.container {
+  box-sizing: border-box;
+  padding: 0 10px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  h2 {
+    color: $color-primary;
+    font-size: $size-subtitle;
+    margin-bottom: 80px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: $size-p;
+    }
+  }
+  img {
+    margin: 100px 0;
+    @media screen and (max-width: 768px) {
+      width: 200px;
+      height: 100px;
+    }
+  }
+  a {
+    color: $color-tert;
+    font-size: $size-p;
+    margin: 50px 0;
+    @media screen and (max-width: 768px) {
+      font-size: $size-tag;
+    }
+  }
+}

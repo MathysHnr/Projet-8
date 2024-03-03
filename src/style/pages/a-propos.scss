@@ -1,0 +1,29 @@
+.img_banner_apropos {
+  margin: auto;
+  max-width: 1440px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  box-sizing: border-box;
+  img {
+    box-sizing: border-box;
+    height: 250px;
+  }
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  max-width: 1240px;
+  padding: 0 10px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  @media screen and (max-width: 1440px) {
+    width: 85%;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 30px auto 20px;
+    width: 100%;
+  }
+}
