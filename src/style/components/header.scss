@@ -25,6 +25,9 @@ nav {
     padding-left: 20px;
     display: flex;
     align-items: center;
+    &:active {
+      text-decoration: underline;
+    }
     &:hover {
       text-decoration: underline;
     }

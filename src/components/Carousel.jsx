@@ -14,18 +14,8 @@ function Carousel({ data }) {
 
   return (
     <div className="logement_banner">
-      {data.map((image, id) => {
-        return (
-          <img
-            src={image}
-            alt={image}
-            key={id}
-            className={
-              slide === id ? "logement_picture" : "logement_picture hidden"
-            }
-          />
-        );
-      })}
+      <img src={data[slide]} alt={data[slide]} className="logement_picture" />
+
       <img
         src={ArrowLeft}
         alt="Flêche gauche"
